@@ -1,0 +1,16 @@
+C:\Users\asus\source\repos\MyWay\MyWay\bin\Debug\netstandard2.0\MyWay.deps.json
+C:\Users\asus\source\repos\MyWay\MyWay\bin\Debug\netstandard2.0\MyWay.dll
+C:\Users\asus\source\repos\MyWay\MyWay\bin\Debug\netstandard2.0\ref\MyWay.dll
+C:\Users\asus\source\repos\MyWay\MyWay\bin\Debug\netstandard2.0\MyWay.pdb
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\Views\AffichageUsers.xaml.g.cs
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\Views\Inscription.xaml.g.cs
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.AssemblyInfoInputs.cache
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.AssemblyInfo.cs
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.dll
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\ref\MyWay.dll
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.pdb
+C:\Users\asus\source\repos\MyWay\MyWay\obj\Debug\netstandard2.0\MyWay.csprojAssemblyReference.cache

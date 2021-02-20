@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MyWay.CustomeRenderer"
+             x:Class="MyWay.Views.Inscription">
+    <StackLayout Padding="0">
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="LightPink" HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="https://cdn.futura-sciences.com/buildsv6/images/wide1920/0/d/c/0dc9a089e6_50160212_adobestock-298585211.jpg" Aspect="AspectFill" Margin="0"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="15,120,15,150">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="370" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="S'inscrire" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://www.zebulon.fr/wp-content/uploads/2018/09/utilisateurs-windows-181_full.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <local:MyCustomeEntry  x:Name="Entry_Username" Placeholder="Nom" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Password.svg/1200px-Password.svg.png" Aspect="AspectFill" Margin="0"/>
+
+                                    </Frame>
+                                    <local:MyCustomeEntry x:Name="Entry_Password" Placeholder="Mot de passe" IsPassword="True" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://previews.123rf.com/images/1xpert/1xpert1504/1xpert150400297/39057635-globe-terrestre-%C3%89l%C3%A9ments-de-cette-image-meubl%C3%A9es.jpg" Aspect="AspectFill" Margin="0"/>
+
+                                    </Frame>
+                                    <local:MyCustomeEntry x:Name="EntryUserLatitude" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://previews.123rf.com/images/1xpert/1xpert1504/1xpert150400297/39057635-globe-terrestre-%C3%89l%C3%A9ments-de-cette-image-meubl%C3%A9es.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <local:MyCustomeEntry x:Name="EntryUserLongitude" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <Button Text="S'inscrire"  x:Name="sinscrire" Clicked="sinscrire_Clicked" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="Purple"  FontAttributes="Bold" CornerRadius="30"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

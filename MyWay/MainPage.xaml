@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MyWay.CustomeRenderer"
+             x:Class="MyWay.MainPage">
+
+    <StackLayout Padding="0">
+
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="LightPink" HeightRequest="150" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="https://cdn.futura-sciences.com/buildsv6/images/wide1920/0/d/c/0dc9a089e6_50160212_adobestock-298585211.jpg" Aspect="AspectFill" Margin="0"/>
+
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="15,110,15,0">
+
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="320" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Se connecter" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://www.zebulon.fr/wp-content/uploads/2018/09/utilisateurs-windows-181_full.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <local:MyCustomeEntry  x:Name="Entry_Username" Placeholder="Nom" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkBlue" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+                                        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Password.svg/1200px-Password.svg.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <local:MyCustomeEntry x:Name="Entry_Password" Placeholder="Mot de passe" IsPassword="True" TextColor="HotPink"  HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <CheckBox IsChecked="False" Color="HotPink"/>
+                            <Label Text="rappelle de moi" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextColor="HotPink"/>
+
+                            <Label Text="Mot de passe oublié" HorizontalTextAlignment="Start" TextColor="HotPink" HorizontalOptions="Start" FontAttributes="Italic" VerticalTextAlignment="Center"/>
+
+
+                        </StackLayout>
+                        <Button Text="Se Connecter" x:Name="SeConnecter" Clicked="SeConnecter_Clicked" BackgroundColor="Purple" TextColor="White" FontAttributes="Bold" CornerRadius="30"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                            <Label Text="Encore pas de compte ?" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+
+                            <Button Text="Nouveau Compte"  x:Name="nouveaucompte" Clicked="nouveaucompte_Clicked" BackgroundColor="Purple" TextColor="White" FontAttributes="Bold" CornerRadius="30"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

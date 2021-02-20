@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWay.Views.AffichageUsers">
+    <StackLayout Padding="0">
+
+
+        <ScrollView>
+            
+        
+        <ListView x:Name="MyListView" ItemsSource="{Binding Users}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="50"></ColumnDefinition>
+                                <ColumnDefinition  Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout BackgroundColor="#313FA0" HeightRequest="300" WidthRequest="300">
+                                <Label Grid.RowSpan="2" Text="{Binding user_name}" FontSize="20" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                                <Button Grid.Column="1" Grid.Row="0" Text="Ajouter" CommandParameter="{Binding .}" x:Name="clicme" Clicked="clicme_Clicked" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="Purple"  FontAttributes="Bold" CornerRadius="30"/>
+
+                                <Button Grid.Column="1" Grid.Row="1" Text="Refuser"  x:Name="RefuserUser" Clicked="RefuserUser_Clicked" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="Purple"  FontAttributes="Bold" CornerRadius="30"/>
+
+                            
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
